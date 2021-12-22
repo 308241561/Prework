@@ -15,9 +15,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var totalLable: UILabel!
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // Sets the title in the Navigation Bar
+        self.title = "Tip Calculator"
+        
+        // Dark mode switcher
+//        overrideUserInterfaceStyle = .dark
     }
 
     @IBAction func calculateTip(_ sender: Any) {

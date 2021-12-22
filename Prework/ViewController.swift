@@ -35,6 +35,5 @@ class ViewController: UIViewController {
         //Update Total Amount
         totalLable.text = String(format: "$%.2f", total)
     }
-    
 }
 

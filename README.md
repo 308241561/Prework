@@ -36,6 +36,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 so far, it is the git commands.
+I learned that from the post provided.
 
 
 ## License

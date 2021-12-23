@@ -22,7 +22,9 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] List anything else that you can get done to improve the app functionality!
+    - [x] added three optional tip percentage
+    - [x] added the dark and light mode of the app
 
 ## Video Walkthrough
 

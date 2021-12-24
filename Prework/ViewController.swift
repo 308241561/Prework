@@ -39,5 +39,15 @@ class ViewController: UIViewController {
         //Update Total Amount
         totalLable.text = String(format: "$%.2f", total)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let defaults = UserDefaults.standard
+        let darkMode = defaults.integer(forKey: "DarkMode")
+        if (darkMode == 1) {
+            overrideUserInterfaceStyle = .dark
+        } else {
+            overrideUserInterfaceStyle = .light
+        }
+    }
 }
 

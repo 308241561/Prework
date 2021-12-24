@@ -25,13 +25,29 @@ class SettingsViewController: UIViewController {
 //
 //        }
 //        overrideUserInterfaceStyle = .dark
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        let defaults = UserDefaults.standard //protcol built in
+        // global access
+        // set diff property
+        let darkMode = defaults.integer(forKey: "DarkMode")
+        if (darkMode == 1) {
+            overrideUserInterfaceStyle = .dark
+        } else {
+            overrideUserInterfaceStyle = .light
+        }
     }
     
 
     @IBAction func switchDarkLightMode(_ sender: Any) {
         if darkModeSwitch.isOn{
+            let defaults = UserDefaults.standard
+            defaults.set(1, forKey: "DarkMode")
             overrideUserInterfaceStyle = .dark
         }else{
+            let defaults = UserDefaults.standard
+            defaults.set(0, forKey: "DarkMode")
             overrideUserInterfaceStyle = .light
         }
     }
